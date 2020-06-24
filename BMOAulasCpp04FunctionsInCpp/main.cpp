@@ -8,8 +8,36 @@
 
 #include <iostream>
 
+int Multiplicar(int a, int b){          //Tradicional
+    return a * b;
+}
+int Multiplicar(){                      //Sem parametros
+    return 5 * 8;
+}
+void MultiplicarVoid(int a, int b){     //Tradicional
+    std::cout << (a * b) << std::endl;
+}
+
+void MulriplicarEImprimir(int a, int b) {
+    int resultado = Multiplicar(a, b);
+    std::cout << resultado << std::endl;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    int resultado1 = Multiplicar(3, 2);
+    std::cout << resultado1 << std::endl;
+    
+    int resultado2 = Multiplicar(8, 5);
+    std::cout << resultado2 << std::endl;
+    
+    int resultado3 = Multiplicar(90, 45);
+    std::cout << resultado3 << std::endl;
+    
+    MulriplicarEImprimir(3, 2);
+    MulriplicarEImprimir(8, 5);
+    MulriplicarEImprimir(90, 45);
+    
     return 0;
 }
