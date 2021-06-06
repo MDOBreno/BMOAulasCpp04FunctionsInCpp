@@ -18,7 +18,7 @@ void MultiplicarVoid(int a, int b){     //Tradicional
     std::cout << (a * b) << std::endl;
 }
 
-void MulriplicarEImprimir(int a, int b) {
+void MultiplicarEImprimir(int a, int b) {
     int resultado = Multiplicar(a, b);
     std::cout << resultado << std::endl;
 }
@@ -35,9 +35,9 @@ int main(int argc, const char * argv[]) {
     int resultado3 = Multiplicar(90, 45);
     std::cout << resultado3 << std::endl;
     
-    MulriplicarEImprimir(3, 2);
-    MulriplicarEImprimir(8, 5);
-    MulriplicarEImprimir(90, 45);
+    MultiplicarEImprimir(3, 2);
+    MultiplicarEImprimir(8, 5);
+    MultiplicarEImprimir(90, 45);
     
     return 0;
 }
